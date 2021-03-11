@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { RrhhGuard } from './guards/rrhh.guard';
 import { InicioComponent } from './inicio/inicio.component';
 import { Page404Component } from './page404/page404.component';
 import { CrearClienteComponent } from './ventas/crear-cliente/crear-cliente.component';
@@ -15,7 +16,8 @@ const routes: Routes = [
   ]},
   {
     path: 'recursos-humanos',
-    loadChildren: () => import('./rrhh/rrhh.module').then(m => m.RrhhModule)
+    loadChildren: () => import('./rrhh/rrhh.module').then(m => m.RrhhModule),
+    canActivate: [RrhhGuard]
   },
   // {path: '**', redirectTo: ''}
   {path: '**', component: Page404Component} // Debe ser el último

@@ -2,6 +2,6 @@
     <ul>
         <a routerLink="/" routerLinkActive="activo" [routerLinkActiveOptions]="{exact: true}">Inicio</a>
         <a routerLink="/ventas/listado-clientes" routerLinkActive="activo">Clientes</a>
-        <a routerLink="/recursos-humanos" routerLinkActive="activo">Recursos Humanos</a>
+        <a *ngIf="isRrhh" routerLink="/recursos-humanos" routerLinkActive="activo">Recursos Humanos</a>
     </ul>
 </nav>

@@ -9,6 +9,7 @@ import { CrearClienteComponent } from './ventas/crear-cliente/crear-cliente.comp
 import { NavComponent } from './nav/nav.component';
 import { Page404Component } from './page404/page404.component';
 import { VisualizarClienteComponent } from './ventas/visualizar-cliente/visualizar-cliente.component';
+import { LoadFadeDirective } from './load-fade.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { VisualizarClienteComponent } from './ventas/visualizar-cliente/visualiz
     CrearClienteComponent,
     NavComponent,
     Page404Component,
-    VisualizarClienteComponent
+    VisualizarClienteComponent,
+    LoadFadeDirective
   ],
   imports: [
     BrowserModule,

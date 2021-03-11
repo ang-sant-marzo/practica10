@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AutenticacionService } from '../servicios/autenticacion.service';
 
 @Component({
   selector: 'app-nav',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  isRrhh: boolean;
+
+  constructor(private autenticacionService: AutenticacionService) { }
 
   ngOnInit(): void {
+    this.isRrhh = this.autenticacionService.isRrhhAccess();
   }
 
 }
