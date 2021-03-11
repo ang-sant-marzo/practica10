@@ -8,6 +8,7 @@ import { ListadoClientesComponent } from './ventas/listado-clientes/listado-clie
 import { CrearClienteComponent } from './ventas/crear-cliente/crear-cliente.component';
 import { NavComponent } from './nav/nav.component';
 import { Page404Component } from './page404/page404.component';
+import { VisualizarClienteComponent } from './ventas/visualizar-cliente/visualizar-cliente.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { Page404Component } from './page404/page404.component';
     ListadoClientesComponent,
     CrearClienteComponent,
     NavComponent,
-    Page404Component
+    Page404Component,
+    VisualizarClienteComponent
   ],
   imports: [
     BrowserModule,

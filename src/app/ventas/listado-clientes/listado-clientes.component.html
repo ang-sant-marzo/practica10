@@ -1,3 +1,17 @@
 <div class="container">
     <h1>{{titulo}}</h1>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>CIF</th>
+            <th></th>
+        </tr>
+        <tr *ngFor="let cliente of clientes">
+            <td>{{cliente.nombre}}</td>
+            <td>{{cliente.cif}}</td>
+            <td>
+                <button routerLink="/ventas/visualizar-cliente/{{cliente.id}}">Visualizar</button>
+            </td>
+        </tr>
+    </table>
 </div>

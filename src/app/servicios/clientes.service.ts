@@ -24,5 +24,4 @@ export class ClientesService {
     return clienteSelec;
   }
 
-
 }
